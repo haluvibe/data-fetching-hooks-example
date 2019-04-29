@@ -22,11 +22,11 @@ const ResultsList = ({hits, isError, isLoading, query = ''}) => {
   )
 };
 
-export default ResultsList;
-
 ResultsList.propTypes = {
   query: PropTypes.string,
   isLoading: PropTypes.bool.isRequired,
   isError: PropTypes.bool.isRequired,
   hits: PropTypes.array.isRequired
 }
+
+export default ResultsList;

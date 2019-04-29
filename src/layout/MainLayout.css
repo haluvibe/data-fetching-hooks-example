@@ -1,0 +1,36 @@
+:root {
+  --fluid-column-row-size-small: 5%;
+  --fluid-column-row-size-large: 20%;
+}
+
+.grid {
+  overflow-y:scroll;
+  display: grid;
+  grid-gap: 10px;
+  height: 100vh;
+  grid-template-rows: var(--fluid-column-row-size-small) auto var(--fluid-column-row-size-small);
+  grid-template-columns: var(--fluid-column-row-size-small) auto var(--fluid-column-row-size-small) ;
+}
+
+.grid__row--full-width {
+  grid-column: 1 / span 3;
+}
+
+.grid__row--left {
+  grid-column: 1 / span 1;
+}
+
+.grid__row--center {
+  grid-column: 2 / span 1;
+}
+
+.grid__row--right {
+  grid-column: 3 / span 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .grid {
+    grid-template-rows: var(--fluid-column-row-size-large) auto var(--fluid-column-row-size-large);
+    grid-template-columns: var(--fluid-column-row-size-large) auto var(--fluid-column-row-size-large) ;
+  }
+}

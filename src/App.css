@@ -1,47 +1,35 @@
 /* App styles */
 
-.container {
-  margin-left: 5vw;
-  margin-right: 5vw;
-}
-
-.spacer--big {
-  margin-bottom: 20vw;
+:root {
+  --spacer-small: 12px;
+  --spacer-large: 24px;
+  --input-height: 32px;
+  --input-border-radius: 8px;
+  --input-border-padding: 8px;
+  --input-border-width: 1px;
+  --input-border-color: grey;
+  --results-list-element-stack: 8px;
 }
 
 .spacer--small {
-  margin-bottom: 12px;
+  margin-bottom: var(--spacer-small);
 }
 
 .query-input {
-  height: 32px;
-  padding: 8px;
-  border-radius: 8px;
-  border-size: 1px;
-  border-color: grey;
+  height: var(--input-height);
+  padding: var(--input-border-padding);
+  border-radius: var(--input-border-radius);
+  border-width: var(--input-border-width);
+  border-color: var(--input-border-color);
   width: 100%;
 }
 
-.results-list {
-
-}
-
 .results-list__element {
-  margin-bottom: 8px;
+  margin-bottom: var(--results-list-element-stack);
 }
-
 
 @media only screen and (min-width: 768px){
-  .container {
-    margin-left: 20vw;
-    margin-right: 20vw;
-  }
-
-  .spacer--big {
-    margin-bottom: 20vw;
-  }
-
   .spacer--small {
-    margin-bottom: 24px;
+    margin-bottom: var(--spacer-large);
   }
 }
