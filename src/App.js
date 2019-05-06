@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import useHackerNewsApi from "./hooks/useHackerNewsApi";
-import MainLayout from "./layout/MainLayout";
+import useHackerNewsApi from './hooks/useHackerNewsApi';
+import MainLayout from './layout/MainLayout';
 import ResultsList from './components/ResultsList/ResultsList';
 import './App.css';
 
