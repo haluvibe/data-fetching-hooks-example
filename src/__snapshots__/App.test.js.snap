@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render correctly 1`] = `
+<MainLayout>
+  <input
+    className="query-input"
+    name="query"
+    onChange={[Function]}
+    type="text"
+    value="redux"
+  />
+  <div
+    className="spacer--small"
+  />
+  <ResultsList
+    hits={
+      Array [
+        Object {},
+      ]
+    }
+    isError={false}
+    isLoading={true}
+    query="redux"
+  />
+</MainLayout>
+`;
